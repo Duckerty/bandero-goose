@@ -197,13 +197,13 @@ body{
   border-radius: 5px;
 }
 
-.modal__form{
+.modal-form{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.modal__form img{
+.modal-form img{
   margin-bottom: 32px;
 }
 
