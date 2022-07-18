@@ -190,14 +190,17 @@ body{
   transition: all .3s ease-in-out;
 }
 
-.modal__form{
+.modal__form-container{
   padding: 32px 92px 60px 92px;
   background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+
+.modal__form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
-  position: relative;
 }
 
 .modal__form img{

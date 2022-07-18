@@ -33,7 +33,7 @@
             Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та
             підтримую позитивний дух народу. Слава Україні!
           </p>
-          <button class="header__button">
+          <button class="header__button" id="open-form-modal-btn">
             Запустити гуся
           </button>
         </div>
@@ -48,7 +48,8 @@
         Цікаві факти про бандерогусей
       </h2>
       <p class="facts__text">
-        Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами
+        Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного
+        озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами
       </p>
       <div class="facts__items">
         <div class="facts__item">
@@ -90,37 +91,46 @@
           Перемога завжди за нами!
         </h2>
         <p class="footer__text">
-          Головна мета бандерогусей — служити гумору та доброті нашого народу. Ми забезпечимо вашу посмішку у часи, коли вона так необхідна
+          Головна мета бандерогусей — служити гумору та доброті нашого народу. Ми забезпечимо вашу посмішку у часи, коли
+          вона так необхідна
         </p>
       </div>
     </div>
   </footer>
 
-  <div class="modal__window">
-    <form action="#" class="modal__form">
+  <div class="modal__window" id="form-modal">
+
+    <div class="modal__form-container">
       <button class="close-btn"><img src="img/close.svg" alt="close"></button>
-      <img src="img/trezub.svg" alt="trezub">
-      <h4 class="modal__form-title">
-        Поділися, будь ласка, поштою
-      </h4>
-      <p class="modal__form-descr">
-        та запиши гуся до бандерозагону
-      </p>
-      <div class="modal__form-field">
-        <label for="user-name" class="modal__field-name">Ім’я</label>
-        <input class="modal__field-input" type="text" id="user-name">
-      </div>
-      <div class="modal__form-field">
-        <label for="user-email" class="modal__field-name">Email</label>
-        <input class="modal__field-input" type="email" id="user-email">
-      </div>
-      <button class="header__button modal__button">Запустити гуся</button>
-    </form>
+      <form action="#" class="modal-form" data-netlify="true">
+        <img src="img/trezub.svg" alt="trezub">
+        <h4 class="modal__form-title">
+          Поділися, будь ласка, поштою
+        </h4>
+        <p class="modal__form-descr">
+          та запиши гуся до бандерозагону
+        </p>
+        <div class="modal__form-field">
+          <label for="user-name" class="modal__field-name">Ім’я</label>
+          <input class="modal__field-input" type="text" id="user-name" name="Ім’я">
+        </div>
+        <div class="modal__form-field">
+          <label for="user-email" class="modal__field-name">Email</label>
+          <input class="modal__field-input" type="email" id="user-email" name="Email">
+        </div>
+        <button class="header__button modal__button" id="launch-btn">
+          Запустити гуся
+        </button>
+      </form>
+    </div>
+
   </div>
 
-  <div class="modal__window">
-    <div class="modal__form">
-      <button class="close-btn"><img src="img/close.svg" alt="close"></button>
+  <div class="modal__window" id="success-modal">
+    <div class="modal__form modal__form-container">
+      <button class="close-btn">
+        <img src="img/close.svg" alt="close">
+      </button>
       <img src="img/trezub.svg" alt="trezub">
       <h4 class="modal__form-title">
         Дякуємо, гусь успішно запущений
@@ -130,7 +140,8 @@
       </p>
     </div>
   </div>
-  
+
+  <script src="js/form.js"></script>
 </body>
 
 </html>
